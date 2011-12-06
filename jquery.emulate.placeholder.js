@@ -1,5 +1,6 @@
 /*
 *	@purpose Simulate placeholder behavior -> It was buggy to set text-align:center to a placeholder in Safari.
+*	@usage $("form#some_form").emulate_placeholder() and add data-placeholder to the desired input elements within that form.
 */
 
 (function($) {
