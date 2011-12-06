@@ -1,10 +1,13 @@
 /*
-*	@purpose Simulate placeholder behavior -> It was buggy to set text-align:center to a placeholder in Safari.
+* jQuery Emulate Placeholder Plugin
+* ---
+* Copyright 2011, Nicholas Pufal (http://nicholaspufal.com/)
+* Released under the MIT license.
 */
 
 (function($) {
 	
-   $.fn.emulate_placeholder = function() {  			
+   $.fn.emulatePlaceholder = function() {  			
 			return this.each(function() {    
 
 				//Prevent form from considerating the placeholder as a valid value
