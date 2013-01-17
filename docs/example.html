@@ -4,41 +4,39 @@
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
 	<title>jQuery Emulate Placeholder Plugin</title>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
-	<script type="text/javascript" src="jquery.emulate.placeholder.js"></script>
+	<script type="text/javascript" src="../src/jquery.emulate.placeholder.js"></script>
 	<script>
 		$(document).ready(function() {
-			
 			$("form#first_form").emulatePlaceholder();
-
 		});
 	</script>
 </head>
 <body>
-	
+
 	<h2>This is the first form (emulatePlaceholder enabled)</h2>
-	
+
 	<form method="post" accept-charset="utf-8" id="first_form">
 		<label for="label1">First label</label>
 		<input type="text" data-placeholder="My first placeholder" /><br/>
-		
+
 		<label for="label2">Second label</label>
 		<input type="text" data-placeholder="My second placeholder" /><br/>
-		
+
 		<input type="submit" value="Submit first form" />
 	</form>
-	
+
 	<h2>This is the second form</h2>
-	
+
 	<form method="post" accept-charset="utf-8" id="second_form">
-		
+
 		<label for="label">Some other label #1</label>
 		<input type="text" data-placeholder="This placeholder won't be loaded" /><br/>
-		
+
 		<label for="label2">Some other label #2</label>
 		<input type="text" data-placeholder="This placeholder won't be loaded" /><br/>
-		
+
 		<input type="submit" value="Submit second form" />
 	</form>
-	
+
 </body>
 </html>
