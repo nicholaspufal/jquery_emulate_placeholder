@@ -1,0 +1,23 @@
+## What is this?
+
+Some browsers do not have support for the "placeholder"  attribute. This plugin fill that gap, by emulating the same behavior using a HTML5 dynamic data attribute, called "data-placeholder".
+
+## How can I use it?
+
+Load the script into your page, according to your folder structure. Let's say you've put it in the **js/** folder:
+
+    <script type="text/javascript" src="js/jquery.emulate.placeholder.js"></script>
+
+Using a jQuery selector, match the form(s) in which you want it to be applied. For example:
+
+    $(document).ready(function() {
+      $("form#my_first_form").emulatePlaceholder();
+    });
+
+And define your placeholder text using the "data-placeholder" attribute:
+
+    <input type="text" id="foo" name="foo" data-placeholder="Enter your placeholder message here" />
+
+And that's it.
+
+From now on, all the inputs from that form will use its "data-placeholder" value as a placeholder.
