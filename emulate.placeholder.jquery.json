@@ -1,0 +1,20 @@
+name": "emulate_placeholder",
+  "title": "jQuery Emulate Placeholder",
+  "description": "jQuery plugin that reproduces the placeholder behavior in browsers that didn't support it before.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Nicholas Pufal",
+    "url": "http://about.me/nicholaspufal"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/jquery/jquery-color/blob/2.1.2/MIT-LICENSE.txt"
+    }
+  ],
+  "homepage": "https://github.com/nicholaspufal/jquery_emulate_placeholder",
+  "docs": "https://github.com/nicholaspufal/jquery_emulate_placeholder",
+  "dependencies": {
+    "jquery": ">=1.4"
+  }
+}
