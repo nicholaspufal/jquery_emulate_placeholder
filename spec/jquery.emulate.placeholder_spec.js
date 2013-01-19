@@ -1,6 +1,6 @@
 describe("jQuery Emulate Placeholder Plugin", function() {
   beforeEach(function() {
-    var form = $("<form></form>");
+    var form = $("<form action='#'></form>");
     form.append("<label for='name'>Name</label>");
     form.append("<input type='text' id='name' data-placeholder='Input your name here' />");
     form.append("<label for='email'>E-mail</label>");
@@ -12,6 +12,16 @@ describe("jQuery Emulate Placeholder Plugin", function() {
 
   afterEach(function() {
     $("form").remove();
+  });
+
+  describe("form was submitted", function() {
+    it("should clear the placeholder text, as it's not a valid value", function() {
+      var input_name = $("form input#name");
+      var input_email = $("form input#email");
+      $("form").submit();
+      expect(input_name.val()).toEqual("");
+      expect(input_email.val()).toEqual("");
+    });
   });
 
   describe("input has no focus", function() {
