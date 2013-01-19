@@ -1,7 +1,7 @@
 name": "emulate_placeholder",
   "title": "jQuery Emulate Placeholder",
   "description": "jQuery plugin that reproduces the placeholder behavior in browsers that didn't support it before.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": {
     "name": "Nicholas Pufal",
     "url": "http://about.me/nicholaspufal"
