@@ -42,7 +42,7 @@ describe("jQuery Emulate Placeholder Plugin", function() {
   });
 
   describe("input has the focus switched", function() {
-    it("should show the value already typed there", function() {
+    it("should keep the value already typed there", function() {
       var input_name = $("form input#name")
 
       input_name.val("foo");
@@ -52,7 +52,7 @@ describe("jQuery Emulate Placeholder Plugin", function() {
       expect(input_name.val()).toEqual("foo");
     });
 
-    it("should return the placeholder when there was no text typed after loosing focus", function() {
+    it("should return the placeholder when there was no text typed yet", function() {
       var input_name = $("form input#name");
 
       input_name.focus();
