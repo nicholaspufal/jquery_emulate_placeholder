@@ -13,27 +13,31 @@
 </head>
 <body>
 
-	<h2>This is the first form (emulatePlaceholder enabled)</h2>
+	<h2>This is the first form (uses emulatePlaceholder)</h2>
 
-	<form method="post" accept-charset="utf-8" id="first_form">
-		<label for="label1">First label</label>
-		<input type="text" data-placeholder="My first placeholder" /><br/>
+	<form method="post" id="first_form">
+		<label>First label
+      <input type="text" data-placeholder="My first placeholder" /><br/>
+    </label>
 
-		<label for="label2">Second label</label>
-		<input type="text" data-placeholder="My second placeholder" /><br/>
+		<label>Second label
+      <input type="text" data-placeholder="My second placeholder" /><br/>
+    </label>
 
 		<input type="submit" value="Submit first form" />
 	</form>
 
-	<h2>This is the second form</h2>
+	<h2>This is the second form (do not uses emulatePlaceholder)</h2>
 
-	<form method="post" accept-charset="utf-8" id="second_form">
+	<form method="post" id="second_form">
 
-		<label for="label">Some other label #1</label>
-		<input type="text" data-placeholder="This placeholder won't be loaded" /><br/>
+		<label for="label">Some other label #2
+      <input type="text" data-placeholder="This placeholder won't be loaded" /><br/>
+    </label>
 
-		<label for="label2">Some other label #2</label>
-		<input type="text" data-placeholder="This placeholder won't be loaded" /><br/>
+		<label>Some other label #2
+      <input type="text" data-placeholder="This placeholder won't be loaded" /><br/>
+    </label>
 
 		<input type="submit" value="Submit second form" />
 	</form>
